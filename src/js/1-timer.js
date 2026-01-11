@@ -82,7 +82,7 @@ function addLeadingZero(value) {
 function updateTimerUI(ms) {
   const { days, hours, minutes, seconds } = convertMs(ms);
 
-  daysEl.textContent = days;
+  daysEl.textContent = addLeadingZero(days);
   hoursEl.textContent = addLeadingZero(hours);
   minutesEl.textContent = addLeadingZero(minutes);
   secondsEl.textContent = addLeadingZero(seconds);
